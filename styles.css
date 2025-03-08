@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    background-color: rgb(156, 157, 159);
+    height: 100vh;
+    font-family: sans-serif;
+}
+header{
+    margin: 0;
+    width: 100vw;
+    height: 400px;
+    background-image: url(ñ.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100;
+    padding: auto;
+    backdrop-filter: blur(5px) saturate(180%) contrast(85%) brightness(85%) hue-rotate(0deg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(ñ.jpeg);
+}  
+h1{
+    margin: auto;
+    text-align: center;
+    justify-self: start;
+    color: rgb(39, 38, 38);
+}
+.contenedores{
+    display: flex;
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+nav{
+    min-width: 200px;
+    background-color: rgb(146, 148, 167);
+}
+main{
+    min-width: 300px;
+    max-width: 600px;
+    background-color: rgb(146, 148, 167);
+}
+p{
+    margin: 10px;
+    text-align: justify;
+}
+aside{
+    min-width: 200px;
+    background-color: rgb(146, 148, 167);
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px){
+    .contenedores{
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* Lineas JS */
+
+footer{
+    background-color: rgb(50, 50, 55);
+    color: rgb(100, 94, 94);
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    width: 100vw;
+    display: flex;
+}
+
+.interactuar{
+    display: block;
+    margin: auto;
+}
+button{
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    border-radius: 30px;
+    background-color: rgb(146, 148, 167);
+    outline: none;
+    border: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1.5s;
+}
+button:hover{
+    background-color: rgb(84, 84, 89);
+}
